@@ -5,5 +5,12 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [svelte(), tailwind()]
+  integrations: [svelte(), tailwind()],
+  vite: {
+    build: {
+      // assetsDir: '/tmp/somewhere',
+      // assetsDir: '/home/paolo/somewhere',
+      assetsDir: '../../../somewhere'
+    }
+  }
 });

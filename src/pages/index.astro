@@ -1,21 +1,13 @@
 ---
-	import Nav from '../components/Nav.astro'
-	// import Counter from '../components/Counter.svelte'
+	import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
-<html lang="en">
+<script>
+	console.log(foo)
+</script>
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width" />
-	<title>Astro</title>
-</head>
-
-<body>
-	<h1>Astro</h1>
-	<Nav currentPage="home" />
-	<h2>Home page</h2>
-	<!-- <Counter count={10} client:load /> -->
-</body>
-
-</html>
+<BaseLayout>
+	<h1>Homepage</h1>
+	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed fuga molestiae aspernatur numquam beatae deserunt
+		totam doloremque ipsa itaque quo molestias magni nam rem cumque, necessitatibus tenetur maxime nisi ea.</p>
+</BaseLayout>
